@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <h1>リンクテスト</h1>
+
+  <ul>
+    <li><a href="#about">Aboutへ</a></li>
+    <li><a href="#works">Worksへ</a></li>
+  </ul>
+
+  <section id="about" style="margin-top:100vh;">
+    <h2>About</h2>
+    <p>自己紹介</p>
+  </section>
+
+  <section id="works" style="margin-top:100vh;">
+    <h2>Works</h2>
+    <p>制作実績</p>
+  </section>
+
+</body>
+</html>
