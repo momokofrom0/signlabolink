@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+.topic {
+    padding: 100px 5.3%;
+    font-size: 1.3rem;
+    background-color: #2A2C41;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.topic p {
+    padding-bottom: 20px;
+}
+
+.topic h1 {
+    padding-bottom: 30px;
+}
+
+.nav__item--top {
+    display: block;
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .topic {
+        padding: 200px 10.4%;
+        font-size: 1.5rem;
+    }
+
+    .topic p {
+        padding-bottom: 40px;
+    }
+
+    .topic h1 {
+        padding-bottom: 60px;
+    }
+
+
+
+}

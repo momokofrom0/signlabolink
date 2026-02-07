@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+#stroke{
+    fill: #FFF;
+    stroke: #FFF;
+    stroke-width: .5px;
+    animation: stroke 2s ease-in;
+  }
+  
+  @keyframes stroke {
+    0% {
+      fill: transparent;
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+    }
+  
+    80% {
+      fill: transparent;
+      stroke-dashoffset: 0px;
+    }
+  
+    100% {
+      stroke-dashoffset: #FFF;
+    }
+  }
+
+  .company__page--toppc {
+    display: none;
+}
+
+.header {
+    display: none
+}
+
+.header__link {
+    padding: 5px 5.3%;
+    background-color: rgb(223, 224, 225);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.company__main {
+    background-color: #2A2C41;
+    color: #fff;
+    /* z-index: -100; */
+    position: relative;
+}
+
+.process__page--contents {
+    padding-left: 5.3%;
+    padding-right: 5.3%;
+
+}
+
+
+
+
+.company__page--title {
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+
+  
+}
+  
+.company__page--title {
+    font-family: Montserrat;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 47px;
+}
+
+.company__page--title h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+  
+.company__title--under {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+.company__under--line {
+    width: 40px;
+    height: 3px;
+    background-color: #FFF;
+    
+}
+  
+/* .company__under--line p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+} */
+
+@media screen and (min-width: 768px) {
+
+    .company__page--top {
+        display: none;
+    }
+
+    .company__page--toppc {
+        display: block;
+    }
+
+    .header__link {
+        margin: 0 auto;
+        padding-left: 6.9%;
+        padding-right: 6.9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    .nav__item--top {
+        display: block;
+    }
+
+
+
+
+    .company__page--title {
+        font-size: 8.5rem;
+        /* padding-bottom: 15px; */
+        line-height: 60px;
+        padding-top: 300px;
+        height: 100vh;
+    }
+
+    .company__page--title h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+    }
+
+
+    .company__title--under {
+        gap: 30px;
+    }
+
+    .company__under--line {
+        width: 60px;
+        height: 5px;
+    }
+
+    .process__page--contents {
+        padding-left: 10.4%;
+        padding-right: 10.4%;
+    }
+
+}
+
+/* 画像と説明 */
+
+.process__page--img {
+    width: 80%;
+    height: auto;
+}
+
+.process__page--about {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+    letter-spacing: 0.65px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.process__pc {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .process__page--about {
+        font-size: 1.4rem;
+        line-height: 25px; /* 166.667% */
+        letter-spacing: 1.8px;
+        
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .process__page--about {
+        width: 40%;
+    }
+
+
+    .process__page--img {
+        display: none;
+    }
+
+
+    .process__page--contents {
+        position: relative;
+    }
+
+    .process__pc {
+        display: block;
+        max-width: 420px;
+        width: auto;
+        height: auto;
+        position: absolute;
+        bottom: 200px;
+        right: 10.4%;
+
+    }
+
+    .company__page--section {
+        padding-top: 300px;
+        padding-bottom: 0px;
+    }
+
+    .process__page--about {
+        padding-bottom: 200px;
+    }
+
+}
+
+/* 施行の流れ */
+
+.process__page--frame {
+    background-color: rgb(223, 224, 225);
+    padding-left: 5.3%;
+    padding-right: 5.3%;
+    color: #000;
+    padding-bottom: 150px;
+
+}
+
+.process__page--innerflex {
+    padding-top: 80px;
+}
+
+.process__page--left {
+    width: 80px;
+
+}
+
+.process__page--number {
+    text-align: center;
+    font-size: 6.4rem;
+    font-weight: 700;
+}
+
+.process__page--line {
+    width: 100%;
+    height: 7px;
+    background-color: #2A2C41;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.process__page--english {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-top: 5px;
+    white-space: nowrap;
+}
+
+.process__page--txt h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    padding-bottom: 40px;
+}
+
+.process__page--txt {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 22px; /* 146.667% */
+    letter-spacing: 1.5px;
+    padding-top: 30px;
+    opacity: 0;
+}
+
+
+
+
+.process__frame {
+    padding-top: 50px;
+    
+}
+  
+.process__btn {
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    padding-bottom: 30px;
+}
+  
+.processbtn__title {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Montserrat;
+    font-size: 5rem;
+    font-weight: 700;
+  
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .process__page--innerflex{
+        display: flex;
+        align-self: flex-start;
+        gap:70px;
+    }
+
+    .process__page--txt h3 {
+        padding-bottom: 50px;
+    }
+
+
+
+    .process__page--frame {
+        padding-left: 10.4%;
+        padding-right: 10.4%;
+        padding-bottom: 150px;
+        /* height: 100vh; */
+    
+    }
+    
+
+    
+    .process__page--left {
+        width: 120px;
+    
+    }
+    
+    .process__page--number {
+        text-align: center;
+        font-size: 10rem;
+    }
+    
+    .process__page--line {
+        width: 100%;
+        height: 9px;
+    }
+    
+    .process__page--english {
+        font-size: 2rem;
+        padding-top: 15px;
+    }
+    
+    .process__page--txt h3 {
+        font-size: 2.4rem;
+        letter-spacing: 2.4px;
+        /* padding-top: 25px;
+        padding-bottom: 30px; */
+        line-height: normal;
+
+    }
+    
+    .process__page--txt {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 25px; /* 146.667% */
+        letter-spacing: 1.5px;
+        padding-top: 40px;
+    }
+
+    .process__btn {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .process__btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(42, 44, 65, 0.2); 
+        transition: left 1s ease;
+        z-index: -1;
+    }
+
+
+    .process__btn:hover::before {
+        left: 0;
+
+    }
+}
+    
+    
+    
+
+  
+
+
+  @media screen and (min-width: 1024px) {
+
+
+    .process__page--frame {
+        padding-bottom: 200px;
+    
+    }
+
+
+    .process__page--innerflex{
+        gap:110px;
+        padding-top: 120px;
+    }
+
+    .process__page--txt {
+        padding-top: 50px;
+    }
+
+    .process__page--txt h3 {
+        padding-bottom: 70px;
+        font-size: 3rem;
+    }
+
+    .process__page--number {
+        font-size: 12.8rem;
+    }
+    
+    .process__frame {
+        padding-top: 80px;
+    }
+        
+    .process__page--left {
+        width: 160px;
+    
+    }
+
+
+
+
+    .processbtn__title {
+        font-size: 7.5rem;
+        font-weight: 700;
+    }
+    
+    .btn__left {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .process__btn {
+        padding-bottom: 50px;
+        border-top: 6px solid #000;
+        border-bottom: 6px solid #000;
+    }
+    
+    .btn__title--subprocess {
+        padding-left: 10px;
+    }
+    
+    
+    
+    .btn__right {
+        padding-top: 50px;
+        width: 40px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+
+
+      
+
+
+  }
+
+
+
+  .aa {
+    width: 100%;
+    height: 3px;
+    background-color: #2A2C41;
+  }

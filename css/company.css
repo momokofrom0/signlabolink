@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+#stroke{
+  fill: #FFF;
+  stroke: #FFF;
+  stroke-width: .5px;
+  animation: stroke 2s ease-in;
+}
+
+@keyframes stroke {
+  0% {
+    fill: transparent;
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+  }
+
+  80% {
+    fill: transparent;
+    stroke-dashoffset: 0px;
+  }
+
+  100% {
+    stroke-dashoffset: #FFF;
+  }
+}
+
+.header {
+    display: none
+}
+
+.header__link {
+    padding: 5px 5.3%;
+    background-color: rgb(223, 224, 225);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.company__page--toppc {
+    display: none;
+}
+
+
+
+.company__main {
+    background-color: #2A2C41;
+    color: #fff;
+    padding-left: 5.3%;
+    padding-right: 5.3%;
+    
+    
+}
+
+
+.company__page--section {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  
+}
+  
+.company__page--title {
+    font-family: Montserrat;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 47px;
+}
+
+.company__page--title h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+  
+.company__title--under {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+.company__under--line {
+    width: 40px;
+    height: 3px;
+    background-color: #FFF;
+    
+}
+  
+/* .company__under--line p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+} */
+
+@media screen and (min-width: 768px) {
+
+    .header__link {
+        margin: 0 auto;
+        padding-left: 6.9%;
+        padding-right: 6.9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .company__page--toppc {
+        display: block;
+    }
+
+    .company__page--top {
+        display: none;
+    }
+
+    .nav__item--top {
+        display: block;
+    }
+
+    .company__main {
+        padding-left: 10.4%;
+        padding-right: 10.4%;
+    }
+
+    .company__page--section {
+        padding-top: 300px;
+        /* padding-bottom: 200px; */
+        height: 100vh;
+    }
+
+    .company__page--title {
+        font-size: 8.5rem;
+        /* padding-bottom: 15px; */
+        line-height: 60px;
+    }
+
+    .company__page--title h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+    }
+
+
+    .company__title--under {
+        gap: 30px;
+    }
+
+    .company__under--line {
+        width: 60px;
+        height: 5px;
+    }
+
+
+
+
+}
+
+/* 代表挨拶 */
+
+.company__message {
+    background-color: rgb(223, 224, 225);
+    padding: 20px 3% 20px;
+    color: black;
+    perspective: 1000px;
+    opacity: 0;
+    transform: rotateY(90deg);
+}
+
+.company__message--toptxt {
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 700;
+    opacity: 0;
+    
+}
+
+.company__message--greeting {
+    border-bottom: 5px solid #203E5A;
+    text-align: right;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.company__message--about {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 22px; /* 146.667% */
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.company__message--txt1 span {
+    white-space: nowrap;
+
+}
+
+.company__message--txt2 {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.company__message--img {
+    opacity: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .company__message {
+        padding: 60px 5% 60px;
+    }
+
+    .company__message--toptxt {
+        font-size: 4.5rem;
+        
+    }
+
+    .company__message--greeting {
+        border-bottom: 7px solid #203E5A;
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .company__message--about {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 25px; /* 146.667% */
+        letter-spacing: 1.6px;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .company__message--flex {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .company__message--toptxt {
+        text-align: left;
+        
+    }
+
+    .company__message--greeting {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .company__message--img {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    .company__message--toptxt {
+        margin-right:  50px;
+    }
+
+}
+
+/* 会社概要 */
+
+.company__information {
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.company__information--box {
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    opacity: 0;
+}
+
+.company__information--left {
+    width: 80px;
+    text-align: left;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+
+}
+
+.company__information--right {
+    text-align: left;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.company__information--map {
+    height: 200px;
+    margin-top: 30px;
+    width: 100%;
+    opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .company__information {
+        padding-top: 100px;
+        padding-bottom: 280px;
+    }
+
+    .company__information--box {
+        font-size: 1.9rem;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        margin-top: 70px;
+        letter-spacing: 2.2px;
+    }
+
+    .company__information--left {
+        width: 200px;
+    }
+
+    .company__information--map {
+        height: 400px;
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .company__information {
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    .company__information--frame {
+        display: inline-block;
+        width: 85%;
+    }
+
+
+
+}
+
